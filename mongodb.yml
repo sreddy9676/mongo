@@ -1,0 +1,14 @@
+---
+- hosts: mongodb 
+  become: true 
+  tasks: 
+    - name: install docker 
+      yum: 
+        name: docker 
+        state: present 
+    - name: start and enable 
+      service: 
+        name: docker 
+        state: started 
+        enabled: true 
+        
