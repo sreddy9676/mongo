@@ -13,5 +13,5 @@
         enabled: true 
     - name: create mongodb container 
       docker_container: 
-        image: mongo
-        tag: latest
+        name: mongo
+        tag: mongo:latest
