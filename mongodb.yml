@@ -22,4 +22,4 @@
     - name: create mongodb container 
       docker_container: 
         name: mongodb
-        tag: mongo:latest
+        image: mongo:latest
