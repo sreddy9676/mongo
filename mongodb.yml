@@ -16,7 +16,7 @@
         name: python-pip 
         state: present 
     - name: install docker-py 
-      yum: 
+      pip: 
         name: docker-py 
         state: present  
     - name: create mongodb container 
