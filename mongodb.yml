@@ -11,4 +11,7 @@
         name: docker 
         state: started 
         enabled: true 
-        
+    - name: create mongodb container 
+      docker_container: 
+        image: mongo
+        tag: latest
