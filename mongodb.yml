@@ -10,7 +10,15 @@
       service: 
         name: docker 
         state: started 
-        enabled: true 
+        enabled: true
+    - name: install pip
+      yum: 
+        name: python-pip 
+        state: present 
+    - name: install docker-py 
+      yum: 
+        name: docker-py 
+        state: present  
     - name: create mongodb container 
       docker_container: 
         name: mongo
