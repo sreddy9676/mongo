@@ -23,3 +23,5 @@
       docker_container: 
         name: mongodb
         image: mongo:latest
+        volumes: 
+          - /myvolume
