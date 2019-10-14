@@ -21,5 +21,5 @@
         state: present  
     - name: create mongodb container 
       docker_container: 
-        name: mongo
+        name: mongodb
         tag: mongo:latest
