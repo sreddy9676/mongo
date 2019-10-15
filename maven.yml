@@ -17,8 +17,9 @@
         state: absent
     - name: change filename
       file: 
-        path: /opt/
-        command: mv apache-maven-3.6.2 maven3
+        path: /opt/apache-maven-3.6.2
+        dest: /opt/maven3
+        
         
 
     
