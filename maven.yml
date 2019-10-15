@@ -15,6 +15,10 @@
       file:
         path: /opt/apache-maven-3.6.2-bin.tar.gz
         state: absent
+    - name: change filename
+      file: 
+        path: /opt/
+        command: mv apache-maven-3.6.2 maven3
         
 
     
