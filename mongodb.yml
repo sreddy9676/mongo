@@ -18,14 +18,15 @@
     - name: install docker-py 
       pip: 
         name: docker-py 
-        state: present  
+        state: present
+    - name: create docker volume
+      docker_volume:
+        name: mydata  
     - name: create mongodb container 
       docker_container: 
         name: mongodb
         image: mongo:latest
         volumes: 
-          - myvolume:/muni
-    - name: create docker volume
-      docker_volume:
-        name: myvolume
+          - mydata:/muni
+    
           
