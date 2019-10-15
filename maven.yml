@@ -1,0 +1,10 @@
+---
+- hosts: mongodb 
+  become: true 
+  tasks: 
+    - name: download maven 
+      git_url: 
+        url: http://mirrors.estointernet.in/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.tar.gz
+    - name: untar the file
+      command: tar xvf apache-maven-3.6.2-bin.tar.gz 
+    
