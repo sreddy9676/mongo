@@ -13,7 +13,7 @@
         remote_src: yes
     - name: remove untar file
       file: 
-        src: /opt/apache-maven-3.6.2-bin.tar.gz
+        path: /opt/apache-maven-3.6.2-bin.tar.gz
         state: absant
 
     
