@@ -25,5 +25,5 @@
         image: mongo:latest
     - name: create docker volume
       docker_volume:
-        name: myvolume
+        name: mydatavolume
           
