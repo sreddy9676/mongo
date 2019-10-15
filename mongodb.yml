@@ -24,8 +24,8 @@
         name: mongodb
         image: mongo:latest
         volumes: 
-          - mydatavolume:/muni
+          - myvolume:/muni
     - name: create docker volume
       docker_volume:
-        name: mydatavolume
+        name: myvolume
           
