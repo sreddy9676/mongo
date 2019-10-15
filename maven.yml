@@ -2,6 +2,8 @@
 - hosts: mongodb 
   become: true 
   tasks: 
+    - name: install java 
+      command: yum install java-1.8*
     - name: download maven 
       get_url: 
         url: http://mirrors.estointernet.in/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.tar.gz
