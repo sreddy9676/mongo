@@ -23,10 +23,9 @@
       docker_container: 
         name: mongodb
         image: mongo:latest
+        mount: 
+          - /data/db
     - name: create docker volume
       docker_volume:
         name: mydata 
-        mountpath: /data/db
         
-    
-          
