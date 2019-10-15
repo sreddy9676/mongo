@@ -26,7 +26,6 @@
     - name: create docker volume
       docker_volume:
         name: mydata 
-    - name: mount volume
-      mount: 
-        src: /mydata
-        dest: /data/db
+        mount: 
+          src: /mydata
+          dest: /data/db
