@@ -19,14 +19,14 @@
       pip: 
         name: docker-py 
         state: present
-    - name: create docker volume
-      docker_volume:
-        name: mydata  
     - name: create mongodb container 
       docker_container: 
         name: mongodb
         image: mongo:latest
-        volumes: 
-          - mydata:/muni
+    - name: create docker volume
+      docker_volume:
+        name: mydata 
+        mountpath: /data/db
+        
     
           
