@@ -23,7 +23,8 @@
       docker_container: 
         name: mongodb
         image: mongo:latest
-        volume: mydatavolume:/muni
+        volumes: 
+          - mydatavolume:/muni
     - name: create docker volume
       docker_volume:
         name: mydatavolume
